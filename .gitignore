@@ -51,3 +51,7 @@ __pycache__/
 
 # Ignore logs
 *.log
+
+#Ignore output
+/backend/output/
+/ouput
