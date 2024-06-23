@@ -1,0 +1,421 @@
+[
+    {
+        "type": "chat_metadata",
+        "chat_group_id": "4aca0cee-9eb4-4ec6-85d8-c43262385a87",
+        "chat_id": "9e8f04f5-7f7f-4b90-adf4-45ff53917488"
+    },
+    {
+        "type": "user_message",
+        "message": {
+            "role": "user",
+            "content": "Oh, I was like, what? Oh. I have a I got to I got I thought about it. Yeah. I got to go. With all the corona beer, like, it took a hit, man. Sales are dipping. At during the Because they have the same thing. Because they're so ."
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.05157880857586861,
+                    "Adoration": 0.02772422879934311,
+                    "Aesthetic Appreciation": 0.03333260491490364,
+                    "Amusement": 0.13081547617912292,
+                    "Anger": 0.03250633552670479,
+                    "Anxiety": 0.02752942033112049,
+                    "Awe": 0.05667565390467644,
+                    "Awkwardness": 0.10015211999416351,
+                    "Boredom": 0.018421214073896408,
+                    "Calmness": 0.048807624727487564,
+                    "Concentration": 0.12066676467657089,
+                    "Confusion": 0.1670832633972168,
+                    "Contemplation": 0.14714157581329346,
+                    "Contempt": 0.022388309240341187,
+                    "Contentment": 0.03347538039088249,
+                    "Craving": 0.008427975699305534,
+                    "Desire": 0.03550195321440697,
+                    "Determination": 0.029054991900920868,
+                    "Disappointment": 0.059750914573669434,
+                    "Disgust": 0.030499540269374847,
+                    "Distress": 0.03889231011271477,
+                    "Doubt": 0.05068731680512428,
+                    "Ecstasy": 0.017871182411909103,
+                    "Embarrassment": 0.07681027799844742,
+                    "Empathic Pain": 0.009320598095655441,
+                    "Entrancement": 0.013444177806377411,
+                    "Envy": 0.029977640137076378,
+                    "Excitement": 0.04829075559973717,
+                    "Fear": 0.03028753213584423,
+                    "Guilt": 0.02329883724451065,
+                    "Horror": 0.02768438681960106,
+                    "Interest": 0.10678579658269882,
+                    "Joy": 0.04317169263958931,
+                    "Love": 0.02116452530026436,
+                    "Nostalgia": 0.08947231620550156,
+                    "Pain": 0.012278508394956589,
+                    "Pride": 0.06041981279850006,
+                    "Realization": 0.1278713345527649,
+                    "Relief": 0.010143270716071129,
+                    "Romance": 0.03124808892607689,
+                    "Sadness": 0.02028145082294941,
+                    "Satisfaction": 0.03896445035934448,
+                    "Shame": 0.022187737748026848,
+                    "Surprise (negative)": 0.1013965755701065,
+                    "Surprise (positive)": 0.10719602555036545,
+                    "Sympathy": 0.005960334558039904,
+                    "Tiredness": 0.00999132078140974,
+                    "Triumph": 0.017771795392036438
+                }
+            }
+        },
+        "time": {
+            "begin": 400,
+            "end": 19530
+        },
+        "from_text": true
+    },
+    {
+        "type": "assistant_message",
+        "id": "f013b6afb8e94108b0aab8e65ccb603d",
+        "message": {
+            "role": "assistant",
+            "content": "Oh wow, you're jumping around a bit there!"
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.04107666015625,
+                    "Adoration": 0.03363037109375,
+                    "Aesthetic Appreciation": 0.0196533203125,
+                    "Amusement": 0.256103515625,
+                    "Anger": 0.09686279296875,
+                    "Anxiety": 0.0819091796875,
+                    "Awe": 0.07220458984375,
+                    "Awkwardness": 0.210693359375,
+                    "Boredom": 0.0200347900390625,
+                    "Calmness": -0.0028743743896484375,
+                    "Concentration": 0.00444793701171875,
+                    "Confusion": 0.13525390625,
+                    "Contemplation": 0.0035495758056640625,
+                    "Contempt": 0.115478515625,
+                    "Contentment": 0.010772705078125,
+                    "Craving": -0.038909912109375,
+                    "Desire": 0.01508331298828125,
+                    "Determination": 0.00803375244140625,
+                    "Disappointment": 0.08685302734375,
+                    "Disgust": 0.09881591796875,
+                    "Distress": 0.08349609375,
+                    "Doubt": 0.08001708984375,
+                    "Ecstasy": 0.0035076141357421875,
+                    "Embarrassment": 0.0673828125,
+                    "Empathic Pain": 0.034088134765625,
+                    "Entrancement": 0.0257110595703125,
+                    "Envy": 0.0310516357421875,
+                    "Excitement": 0.10601806640625,
+                    "Fear": 0.064697265625,
+                    "Guilt": 0.01236724853515625,
+                    "Horror": 0.027069091796875,
+                    "Interest": 0.0648193359375,
+                    "Joy": 0.042938232421875,
+                    "Love": 0.01343536376953125,
+                    "Nostalgia": -0.009246826171875,
+                    "Pain": 0.03057861328125,
+                    "Pride": 0.0040740966796875,
+                    "Realization": 0.131591796875,
+                    "Relief": 0.047821044921875,
+                    "Romance": -0.01319122314453125,
+                    "Sadness": 0.0035572052001953125,
+                    "Satisfaction": 0.0312347412109375,
+                    "Shame": 0.02081298828125,
+                    "Surprise (negative)": 0.1556396484375,
+                    "Surprise (positive)": 0.213623046875,
+                    "Sympathy": 0.0039825439453125,
+                    "Tiredness": 0.01171875,
+                    "Triumph": 0.0170440673828125
+                }
+            }
+        },
+        "from_text": false
+    },
+    {
+        "type": "audio_output",
+        "id": "f013b6afb8e94108b0aab8e65ccb603d"
+    },
+    {
+        "type": "assistant_message",
+        "id": "c6722846448844c9b5c8f69e0347b2da",
+        "message": {
+            "role": "assistant",
+            "content": "Sounds like Corona beer's been on your mind."
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.1572265625,
+                    "Adoration": 0.1099853515625,
+                    "Aesthetic Appreciation": 0.05609130859375,
+                    "Amusement": 0.263671875,
+                    "Anger": 0.0126495361328125,
+                    "Anxiety": 0.00396728515625,
+                    "Awe": 0.08428955078125,
+                    "Awkwardness": 0.04345703125,
+                    "Boredom": -0.002811431884765625,
+                    "Calmness": 0.043701171875,
+                    "Concentration": 0.0218048095703125,
+                    "Confusion": 0.062408447265625,
+                    "Contemplation": 0.08782958984375,
+                    "Contempt": 0.058135986328125,
+                    "Contentment": 0.056793212890625,
+                    "Craving": -0.0015287399291992188,
+                    "Desire": 0.01227569580078125,
+                    "Determination": 0.0184326171875,
+                    "Disappointment": -0.01092529296875,
+                    "Disgust": 0.025177001953125,
+                    "Distress": 0.0120086669921875,
+                    "Doubt": 0.0234832763671875,
+                    "Ecstasy": 0.06658935546875,
+                    "Embarrassment": 0.012939453125,
+                    "Empathic Pain": 0.0281829833984375,
+                    "Entrancement": 0.02899169921875,
+                    "Envy": 0.021270751953125,
+                    "Excitement": 0.2486572265625,
+                    "Fear": 0.018585205078125,
+                    "Guilt": 0.004482269287109375,
+                    "Horror": 0.0125885009765625,
+                    "Interest": 0.23291015625,
+                    "Joy": 0.1552734375,
+                    "Love": 0.0268402099609375,
+                    "Nostalgia": 0.05499267578125,
+                    "Pain": 0.0164337158203125,
+                    "Pride": 0.087158203125,
+                    "Realization": 0.17919921875,
+                    "Relief": 0.0164947509765625,
+                    "Romance": 0.00441741943359375,
+                    "Sadness": -0.00962066650390625,
+                    "Satisfaction": 0.08819580078125,
+                    "Shame": -0.00951385498046875,
+                    "Surprise (negative)": 0.027069091796875,
+                    "Surprise (positive)": 0.14013671875,
+                    "Sympathy": -0.007354736328125,
+                    "Tiredness": 0.01800537109375,
+                    "Triumph": 0.051483154296875
+                }
+            }
+        },
+        "from_text": false
+    },
+    {
+        "type": "audio_output",
+        "id": "c6722846448844c9b5c8f69e0347b2da"
+    },
+    {
+        "type": "user_interruption",
+        "time": 0
+    },
+    {
+        "type": "assistant_end"
+    },
+    {
+        "type": "user_message",
+        "message": {
+            "role": "user",
+            "content": "Why? When you drink it, you get Corona? Oh."
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.017183417454361916,
+                    "Adoration": 0.012918450869619846,
+                    "Aesthetic Appreciation": 0.008781933225691319,
+                    "Amusement": 0.05465118587017059,
+                    "Anger": 0.06878209114074707,
+                    "Anxiety": 0.05967223644256592,
+                    "Awe": 0.011240081861615181,
+                    "Awkwardness": 0.09044379740953445,
+                    "Boredom": 0.027593540027737617,
+                    "Calmness": 0.0634298026561737,
+                    "Concentration": 0.050344422459602356,
+                    "Confusion": 0.22454707324504852,
+                    "Contemplation": 0.04886980354785919,
+                    "Contempt": 0.02574234828352928,
+                    "Contentment": 0.030703458935022354,
+                    "Craving": 0.012976141646504402,
+                    "Desire": 0.02096753567457199,
+                    "Determination": 0.055061426013708115,
+                    "Disappointment": 0.041315075010061264,
+                    "Disgust": 0.015000982210040092,
+                    "Distress": 0.04353233426809311,
+                    "Doubt": 0.09273171424865723,
+                    "Ecstasy": 0.00928786676377058,
+                    "Embarrassment": 0.015248646028339863,
+                    "Empathic Pain": 0.00626795832067728,
+                    "Entrancement": 0.0066450657323002815,
+                    "Envy": 0.04832643270492554,
+                    "Excitement": 0.03741838410496712,
+                    "Fear": 0.025847483426332474,
+                    "Guilt": 0.009792998433113098,
+                    "Horror": 0.008346183225512505,
+                    "Interest": 0.10537006705999374,
+                    "Joy": 0.025149362161755562,
+                    "Love": 0.018002420663833618,
+                    "Nostalgia": 0.04085017740726471,
+                    "Pain": 0.015286121517419815,
+                    "Pride": 0.016488123685121536,
+                    "Realization": 0.02077645994722843,
+                    "Relief": 0.0043235160410404205,
+                    "Romance": 0.033345356583595276,
+                    "Sadness": 0.026606377214193344,
+                    "Satisfaction": 0.018626680597662926,
+                    "Shame": 0.013484209775924683,
+                    "Surprise (negative)": 0.028154660016298294,
+                    "Surprise (positive)": 0.026888569816946983,
+                    "Sympathy": 0.007647167891263962,
+                    "Tiredness": 0.018836716189980507,
+                    "Triumph": 0.005647670011967421
+                }
+            }
+        },
+        "time": {
+            "begin": 16920,
+            "end": 18860
+        },
+        "from_text": false
+    },
+    {
+        "type": "assistant_message",
+        "id": "f10294c889b343a7a4dd032279cedad6",
+        "message": {
+            "role": "assistant",
+            "content": "Ah, I see what you're getting at!"
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.03057861328125,
+                    "Adoration": 0.029693603515625,
+                    "Aesthetic Appreciation": 0.011505126953125,
+                    "Amusement": 0.203125,
+                    "Anger": 0.08551025390625,
+                    "Anxiety": 0.042236328125,
+                    "Awe": 0.047515869140625,
+                    "Awkwardness": 0.0946044921875,
+                    "Boredom": 0.01654052734375,
+                    "Calmness": 0.037109375,
+                    "Concentration": 0.0142822265625,
+                    "Confusion": 0.1114501953125,
+                    "Contemplation": 0.026336669921875,
+                    "Contempt": 0.10284423828125,
+                    "Contentment": 0.05108642578125,
+                    "Craving": 0.005157470703125,
+                    "Desire": 0.028228759765625,
+                    "Determination": 0.043975830078125,
+                    "Disappointment": 0.03533935546875,
+                    "Disgust": 0.057342529296875,
+                    "Distress": 0.051910400390625,
+                    "Doubt": 0.059173583984375,
+                    "Ecstasy": 0.035797119140625,
+                    "Embarrassment": 0.026214599609375,
+                    "Empathic Pain": 0.020050048828125,
+                    "Entrancement": 0.01068115234375,
+                    "Envy": 0.053375244140625,
+                    "Excitement": 0.1759033203125,
+                    "Fear": 0.0394287109375,
+                    "Guilt": 0.014007568359375,
+                    "Horror": 0.02618408203125,
+                    "Interest": 0.1307373046875,
+                    "Joy": 0.057037353515625,
+                    "Love": 0.0178070068359375,
+                    "Nostalgia": 0.02691650390625,
+                    "Pain": 0.0219879150390625,
+                    "Pride": 0.01123046875,
+                    "Realization": 0.183349609375,
+                    "Relief": 0.06597900390625,
+                    "Romance": 0.012847900390625,
+                    "Sadness": 0.00843048095703125,
+                    "Satisfaction": 0.0462646484375,
+                    "Shame": 0.0225830078125,
+                    "Surprise (negative)": 0.060882568359375,
+                    "Surprise (positive)": 0.152099609375,
+                    "Sympathy": -0.01412200927734375,
+                    "Tiredness": 0.016265869140625,
+                    "Triumph": 0.0221710205078125
+                }
+            }
+        },
+        "from_text": false
+    },
+    {
+        "type": "audio_output",
+        "id": "f10294c889b343a7a4dd032279cedad6"
+    },
+    {
+        "type": "assistant_message",
+        "id": "9bfe149c4cbb40c29d8c438206e816b6",
+        "message": {
+            "role": "assistant",
+            "content": "No, drinking Corona beer doesn't give you the coronavirus."
+        },
+        "models": {
+            "prosody": {
+                "scores": {
+                    "Admiration": 0.0306243896484375,
+                    "Adoration": 0.037628173828125,
+                    "Aesthetic Appreciation": 0.042327880859375,
+                    "Amusement": 0.1258544921875,
+                    "Anger": 0.11517333984375,
+                    "Anxiety": 0.032989501953125,
+                    "Awe": 0.020965576171875,
+                    "Awkwardness": 0.050628662109375,
+                    "Boredom": -0.0159912109375,
+                    "Calmness": 0.06585693359375,
+                    "Concentration": 0.080810546875,
+                    "Confusion": 0.05224609375,
+                    "Contemplation": 0.0372314453125,
+                    "Contempt": 0.13134765625,
+                    "Contentment": 0.0200653076171875,
+                    "Craving": 0.05059814453125,
+                    "Desire": 0.012542724609375,
+                    "Determination": 0.133056640625,
+                    "Disappointment": 0.062103271484375,
+                    "Disgust": 0.036834716796875,
+                    "Distress": 0.06005859375,
+                    "Doubt": 0.051513671875,
+                    "Ecstasy": 0.03057861328125,
+                    "Embarrassment": 0.045745849609375,
+                    "Empathic Pain": 0.0421142578125,
+                    "Entrancement": 0.00911712646484375,
+                    "Envy": 0.07073974609375,
+                    "Excitement": 0.1080322265625,
+                    "Fear": 0.0204925537109375,
+                    "Guilt": 0.0070037841796875,
+                    "Horror": 0.0231475830078125,
+                    "Interest": 0.1497802734375,
+                    "Joy": 0.041046142578125,
+                    "Love": 0.0247955322265625,
+                    "Nostalgia": 0.0116424560546875,
+                    "Pain": -0.0085601806640625,
+                    "Pride": 0.0703125,
+                    "Realization": 0.1273193359375,
+                    "Relief": 0.03472900390625,
+                    "Romance": -0.0011615753173828125,
+                    "Sadness": 0.01849365234375,
+                    "Satisfaction": 0.0225830078125,
+                    "Shame": 0.0130462646484375,
+                    "Surprise (negative)": 0.0234375,
+                    "Surprise (positive)": 0.005390167236328125,
+                    "Sympathy": 0.0190277099609375,
+                    "Tiredness": 0.01375579833984375,
+                    "Triumph": 0.04766845703125
+                }
+            }
+        },
+        "from_text": false
+    },
+    {
+        "type": "audio_output",
+        "id": "9bfe149c4cbb40c29d8c438206e816b6"
+    },
+    {
+        "type": "user_interruption",
+        "time": 0
+    },
+    {
+        "type": "assistant_end"
+    }
+]
