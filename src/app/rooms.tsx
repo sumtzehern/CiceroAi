@@ -9,7 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 export default function Roomspage() {
   return (
-    <div className="grid grid-cols-4 min-h-screen">
+    <div className="grid grid-cols-3 min-h-screen">
       <div className="col-span-2 p-4 pr-2">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 min-h-screen flex items-start justify-center">
           <CameraView />
@@ -22,9 +22,7 @@ export default function Roomspage() {
           <Textarea placeholder="Input your prompt for EVI" className="text-base text-gray-600"/>
           <Button variant="default" className="w-full">Submit</Button>
         </div>
-      </div>
 
-      <div className="col-span-1 p-4 pl-2 flex flex-col">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4">
           <h1 className="text-base">Insights Report</h1>
           
@@ -47,6 +45,7 @@ export default function Roomspage() {
           {/* <Button variant="default" className="w-full">Submit</Button> */}
         </div>
       </div>
+        
     </div>
   );
 }
