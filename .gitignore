@@ -36,6 +36,23 @@ yarn-error.log*
 next-env.d.ts
 
 /env
+# Ignore virtual environment directories
+evi-env/
+venv/
+
+# Ignore Python cache files
+__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore environment variable files
 .env
 
-/venv
+# Ignore logs
+*.log
+
+#Ignore output
+/backend/output/
+/ouput
+>>>>>>> envi
