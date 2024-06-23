@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Textarea } from "@/components/ui/textarea";
 import CameraView from "./cameraView";
 import { Button } from "@/components/ui/button";
@@ -15,10 +15,13 @@ import {
   MessageInput as DefaultMessageInput, 
   MessageModel 
 } from "@chatscope/chat-ui-kit-react";
+import io from 'socket.io-client';
 
 // Define direction and position types if not exported from the library
 type MessageDirection = "incoming" | "outgoing";
 type MessagePosition = "single" | "normal" | "first" | "last";
+
+const socket = io('http://localhost:5000'); // Adjust the URL if necessary
 
 const Roomspage: React.FC = () => {
   const [messages, setMessages] = useState<Array<{ 
@@ -28,17 +31,38 @@ const Roomspage: React.FC = () => {
     sender: string; 
     direction: MessageDirection; 
     position: MessagePosition 
-  }>>([
-    { id: 1, message: "Hello, what would you like to debate about today?", sentTime: "just now", sender: "assistant", direction: "incoming", position: "single" },
-    { id: 2, message: "I'd like to discuss climate change.", sentTime: "just now", sender: "user", direction: "outgoing", position: "single" }
-  ]);
+  }>>([]);
   const [inputMessage, setInputMessage] = useState("");
 
-  const handleSend = (message: string) => {
-    if (message.trim() !== "") {
+  useEffect(() => {
+    console.log('Setting up WebSocket connection');
+    socket.on('result', (data) => {
       const newMessage = {
         id: messages.length + 1,
-        message: message,
+        message: data.result.content,
+        sentTime: "just now",
+        sender: data.result.role === "assistant" ? "assistant" : "user",
+        direction: data.result.role === "assistant" ? "incoming" : "outgoing",
+        position: "single" as MessagePosition
+      };
+      setMessages((prevMessages) => [...prevMessages, newMessage]);
+    });
+
+    return () => {
+      console.log('Cleaning up WebSocket connection');
+      socket.off('result');
+    };
+  }, [messages]);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setInputMessage(e.target.value);
+  };
+
+  const handleSend = () => {
+    if (inputMessage.trim() !== "") {
+      const newMessage = {
+        id: messages.length + 1,
+        message: inputMessage,
         sentTime: "just now",
         sender: "user",
         direction: "outgoing" as MessageDirection,
@@ -46,11 +70,8 @@ const Roomspage: React.FC = () => {
       };
       setMessages([...messages, newMessage]);
       setInputMessage("");
+      socket.emit('process', { input: inputMessage });
     }
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setInputMessage(e.target.value);
   };
 
   return (
@@ -63,8 +84,13 @@ const Roomspage: React.FC = () => {
           <div className="w-full mt-2">
             <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-2 flex flex-col gap-4">
               <h1 className="text-base">Topic</h1>
-              <Textarea placeholder="Input your debate topic for Cicero" className="text-base text-gray-600" />
-              <Button variant="default" className="w-full">Submit</Button>
+              <Textarea 
+                placeholder="Input your debate topic for Cicero" 
+                className="text-base text-gray-600" 
+                value={inputMessage}
+                onChange={handleInputChange}
+              />
+              <Button variant="default" className="w-full" onClick={handleSend}>Submit</Button>
             </div>
           </div>
         </div>
