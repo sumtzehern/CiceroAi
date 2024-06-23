@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Textarea } from "@/components/ui/textarea";
 import CameraView from "./cameraView";
 import { Button } from "@/components/ui/button";
-import PhoneIcon from "@/components/ui/PhoneIcon";
+import PhoneIcon from "@/components/ui/phoneIcon";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import { 
