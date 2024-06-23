@@ -5,6 +5,14 @@ import CameraView from "./cameraView";
 import { Button } from "@/components/ui/button";
 import PhoneIcon from "@/components/ui/phoneIcon";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import {
+  MainContainer,
+  ChatContainer,
+  MessageList,
+  Message,
+  MessageInput,
+} from "@chatscope/chat-ui-kit-react";
 
 export default function Roomspage() {
   return (
@@ -23,6 +31,26 @@ export default function Roomspage() {
           </div>
         </div>
       </div>
+
+      <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4 flex-grow">
+          <h1 className="text-base">Chat</h1>
+          <div style={{ position: "relative", height: "300px" }}>
+            <MainContainer>
+              <ChatContainer>
+                <MessageList>
+                  <Message
+                    model={{
+                      message: "Hello my friend",
+                      sentTime: "just now",
+                      sender: "User",
+                    }}
+                  />
+                </MessageList>
+                <MessageInput placeholder="Type message here" />
+              </ChatContainer>
+            </MainContainer>
+          </div>
+        </div>
 
       <div className="col-span-3 md:col-span-1 p-4 pl-2 flex flex-col">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4">
