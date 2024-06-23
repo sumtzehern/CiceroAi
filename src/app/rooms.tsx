@@ -29,8 +29,8 @@ const Roomspage: React.FC = () => {
     direction: MessageDirection; 
     position: MessagePosition 
   }>>([
-    { id: 1, message: "Hello, what would you like to debate about today?", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" },
-    { id: 3, message: "Hmm, sounds like an interesting topic...", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" }
+    { id: 1, message: "Hello, what would you like to debate about today?", sentTime: "just now", sender: "assistant", direction: "incoming", position: "single" },
+    { id: 2, message: "I'd like to discuss climate change.", sentTime: "just now", sender: "user", direction: "outgoing", position: "single" }
   ]);
   const [inputMessage, setInputMessage] = useState("");
 
@@ -40,7 +40,7 @@ const Roomspage: React.FC = () => {
         id: messages.length + 1,
         message: message,
         sentTime: "just now",
-        sender: "User",
+        sender: "user",
         direction: "outgoing" as MessageDirection,
         position: "single" as MessagePosition
       };
@@ -49,7 +49,7 @@ const Roomspage: React.FC = () => {
     }
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputMessage(e.target.value);
   };
 
@@ -90,6 +90,12 @@ const Roomspage: React.FC = () => {
                   />
                 ))}
               </MessageList>
+              <DefaultMessageInput 
+                value={inputMessage}
+                onChange={handleInputChange}
+                onSend={handleSend}
+                placeholder="Type a message..."
+              />
             </ChatContainer>
           </MainContainer>
         </div>
