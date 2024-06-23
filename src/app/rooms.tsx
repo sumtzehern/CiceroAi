@@ -29,9 +29,8 @@ const Roomspage: React.FC = () => {
     direction: MessageDirection; 
     position: MessagePosition 
   }>>([
-    { id: 1, message: "Hello, how can I assist you today?", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" },
-    { id: 2, message: "I need some help with my homework.", sentTime: "just now", sender: "User", direction: "outgoing", position: "single" },
-    { id: 3, message: "Sure, I'd be happy to help! What subject are you working on?", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" }
+    { id: 1, message: "Hello, what would you like to debate about today?", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" },
+    { id: 3, message: "Hmm, sounds like an interesting topic...", sentTime: "just now", sender: "AI", direction: "incoming", position: "single" }
   ]);
   const [inputMessage, setInputMessage] = useState("");
 
@@ -90,12 +89,6 @@ const Roomspage: React.FC = () => {
                   />
                 ))}
               </MessageList>
-              <DefaultMessageInput 
-                placeholder="Type message here" 
-                value={inputMessage} 
-                onChange={handleInputChange} 
-                onSend={handleSend} 
-              />
             </ChatContainer>
           </MainContainer>
         </div>
