@@ -86,6 +86,7 @@ const Roomspage: React.FC = () => {
                       direction: msg.direction,
                       position: msg.position
                     }}
+                    style={{ textAlign: msg.direction === "outgoing" ? "right" : "left" }}
                   />
                 ))}
               </MessageList>
