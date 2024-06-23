@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import CameraView from "./cameraView";
 import { Button } from "@/components/ui/button";
 import PhoneIcon from "@/components/ui/phoneIcon"
+
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 
@@ -41,8 +42,8 @@ export default function Roomspage() {
               Have fun and use this AI responsibly!
             </AlertDescription>
           </Alert>
-          {/* <Textarea placeholder="Input your prompt for EVI" className="text-base text-gray-600"/> */}
-          {/* <Button variant="default" className="w-full">Submit</Button> */}
+
+          <Button variant="default" className="w-full">Restart</Button>
         </div>
       </div>
         
