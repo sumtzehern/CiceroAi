@@ -90,12 +90,6 @@ const Roomspage: React.FC = () => {
                   />
                 ))}
               </MessageList>
-              <DefaultMessageInput 
-                value={inputMessage}
-                onChange={handleInputChange}
-                onSend={handleSend}
-                placeholder="Type a message..."
-              />
             </ChatContainer>
           </MainContainer>
         </div>
