@@ -53,6 +53,7 @@ def load_chat_from_file(file_path):
     return chat
 
 if __name__ == "__main__":
-    file_name = "/Users/tiago/Desktop/Career/githubRepos/personalProjects/engageEye-next-/backend/output/output_20240622_230700.json"  # Replace with your actual file name
+    file_name = "./backend/output/output_20240622_230700.json"  # Uncomment if using on Windows
+    # file_name = ".\backend\output\output_20240622_230700.json" # Uncomment if using on Mac
     chat = load_chat_from_file(file_name)
     print(chat)
