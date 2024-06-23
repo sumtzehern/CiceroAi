@@ -70,7 +70,7 @@ const Roomspage: React.FC = () => {
         </div>
       </div>
 
-      <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4 flex-grow">
+      <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4 flex-grow col-span-3 md:col-span-1">
         <h1 className="text-base">AI Chat</h1>
         <div style={{ position: "relative", height: "300px" }}>
           <MainContainer>
@@ -92,9 +92,7 @@ const Roomspage: React.FC = () => {
             </ChatContainer>
           </MainContainer>
         </div>
-      </div>
 
-      <div className="col-span-3 md:col-span-1 p-4 pl-2 flex flex-col gap-4">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4">
           <h1 className="text-base">Insights Report</h1>
           <Alert>
