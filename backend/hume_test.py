@@ -1,3 +1,5 @@
+# hume_test.py
+
 import asyncio
 import os
 from dotenv import load_dotenv 
@@ -8,6 +10,8 @@ from datetime import datetime
 
 message_counter = 0
 messages = []
+callback = None  # Add this global variable
+instance_count = 0  # Add this to track instances
 
 def on_open():
     print_ascii_art("Say hello to EVI, Hume AI's Empathic Voice Interface!")
@@ -51,10 +55,13 @@ def on_message(message):
         )
 
     message_box += f"{'='*60}\n"
-    print(message_box)
+    # print(message_box)
 
     filtered_message = {k: v for k, v in message.items() if k != "data"}
     messages.append(filtered_message)
+
+    if callback:
+        callback(filtered_message)  # Call the callback with the message
 
 def get_top_n_emotions(prosody_inferences, number):
     sorted_inferences = sorted(prosody_inferences.items(), key=lambda item: item[1], reverse=True)
@@ -86,7 +93,17 @@ async def user_input_handler(socket: VoiceSocket):
         else:
             await socket.send_text_input(user_input)
 
-async def main() -> None:
+async def main(cb) -> None:
+    global callback, instance_count
+    instance_count += 1
+    print(f"Instance count: {instance_count}")
+    
+    if instance_count > 1:
+        print("Multiple instances detected. Exiting.")
+        return
+
+    callback = cb  # Assign the callback
+
     try:
         load_dotenv()
 
@@ -108,4 +125,4 @@ async def main() -> None:
     except Exception as e:
         print(f"Exception occurred: {e}")
 
-asyncio.run(main())
+# asyncio.run(main())

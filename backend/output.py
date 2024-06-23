@@ -1,19 +1,38 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template
+from flask_socketio import SocketIO, emit
+import asyncio
+import threading
 from hume_test import main
-import time
 
 app = Flask(__name__)
+socketio = SocketIO(app)
+hume_task_started = False  # Add this to track if the task has started
 
-@app.route('/process', methods=['POST'])
-def process():
-    data = request.json
-    result = perform_some_processing(data['input'])
-    return jsonify(result=result)
+@app.route('/')
+def index():
+    return render_template('index.html')
 
-def perform_some_processing(input_data):
-    # Simulate some processing time
-    time.sleep(2)
-    return f"Processed: {input_data}"
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
+    print('Total clients connected:', len(socketio.server.eio.sockets))
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
+    print('Total clients connected:', len(socketio.server.eio.sockets))
+
+def send_message_to_client(message):
+    print(message)
+    socketio.emit('result', {'result': message})
+
+def start_hume_test():
+    global hume_task_started
+    if not hume_task_started:
+        hume_task_started = True
+        asyncio.run(main(send_message_to_client))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Start the hume_test.py script in a separate thread
+    threading.Thread(target=start_hume_test).start()
+    socketio.run(app, debug=True)
