@@ -77,7 +77,7 @@ const Roomspage: React.FC = () => {
     <div className="grid grid-cols-3 min-h-screen">
       <div className="col-span-3 md:col-span-2 p-4 pr-2">
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm p-1 min-h-screen flex-col justify-center">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full" style={{ borderRadius: '30%' }}>
             <CameraView />
           </div>
           <div className="w-full mt-2">
@@ -92,7 +92,7 @@ const Roomspage: React.FC = () => {
 
       <div className="mt-4 rounded-lg border bg-card text-card-foreground shadow-sm p-4 flex flex-col gap-4 flex-grow col-span-3 md:col-span-1">
         <h1 className="text-base">AI Chat</h1>
-        <div style={{ position: "relative", height: "300px" }}>
+        <div style={{ position: "relative", height: "300px", borderRadius: '30%' }}>
           <MainContainer>
             <ChatContainer>
               <MessageList>
