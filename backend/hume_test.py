@@ -7,6 +7,7 @@ from hume_test_helper import print_ascii_art
 # Import necessary classes from the Hume library
 from hume import HumeVoiceClient, MicrophoneInterface, VoiceSocket
 import asyncio
+import sys
 
 # ================================================
 # Global Variables
@@ -133,10 +134,12 @@ async def user_input_handler(socket: VoiceSocket):
             # If user wants to quit, close the connection
             print("Closing the connection...")
             await socket.close()
+            sys.exit(0)
             break
         else:
             # Send the user input as text to the socket
             await socket.send_text_input(user_input)
+        
 
 # ================================================
 # Main Function
